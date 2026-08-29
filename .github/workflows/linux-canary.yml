@@ -11,6 +11,8 @@ name: Linux Canary
 #     the Linux Rust CI jobs in ci.yml.
 #   - pnpm store restore/save pattern mirrors ci.yml:149-196.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
