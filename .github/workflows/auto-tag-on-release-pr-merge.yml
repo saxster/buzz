@@ -26,10 +26,8 @@ name: Auto-tag on Release PR Merge
 # ships mobile.
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches: [main]
-
 permissions:
   contents: read
 
