@@ -4,6 +4,8 @@ name: Signed macOS Canary
 # a tag, GitHub Release, or auto-updater artifact. The DMG is available only as
 # a short-lived GitHub Actions artifact for explicit testing.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
