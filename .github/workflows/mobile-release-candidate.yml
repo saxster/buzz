@@ -2,6 +2,8 @@ name: Publish Mobile Release Candidate
 run-name: Publish mobile-v${{ inputs.version }}-rc.${{ inputs.candidate_number }}
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       version:
