@@ -34,13 +34,6 @@ on:
     # unconditionally (cheap), and tag pushes always run so publish can fire.
     branches: [main]
     tags: ["chart-v[0-9]*"]
-  pull_request:
-    paths:
-      - "deploy/charts/buzz/**"
-      - "deploy/charts/buzz-push-gateway/**"
-      - ".github/workflows/helm-chart.yml"
-      - "ct.yaml"
-
 # Match docker.yml: deny-by-default, each job grants only what it needs.
 permissions: {}
 
